@@ -6,7 +6,11 @@
 
 <title>Chaitanya Sharad Patil | Portfolio</title>
 
+<meta name="description" content="Administrator Desktop Support L3 | Senior Technical Support Specialist @ Wipro | IT Infrastructure | Cybersecurity | VIP Support">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
 
@@ -17,11 +21,22 @@ box-sizing:border-box;
 scroll-behavior:smooth;
 }
 
+:root{
+--primary:#38bdf8;
+--secondary:#0ea5e9;
+--dark:#020617;
+--dark2:#0f172a;
+--card:#111827;
+--text:#f8fafc;
+--muted:#94a3b8;
+}
+
 body{
 font-family:'Poppins',sans-serif;
-background:#0f172a;
-color:#fff;
+background:#0b1120;
+color:white;
 line-height:1.7;
+overflow-x:hidden;
 }
 
 .container{
@@ -30,133 +45,195 @@ max-width:1200px;
 margin:auto;
 }
 
-header{
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:rgba(2,6,23,.95);
+backdrop-filter:blur(12px);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.logo{
+font-size:1.6rem;
+font-weight:700;
+color:var(--primary);
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:var(--primary);
+}
+
+.hero{
 min-height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
-background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
-padding:20px;
+padding:120px 20px 80px;
+background:linear-gradient(135deg,#020617,#0f172a,#111827);
 }
 
-.hero h1{
-font-size:4rem;
-color:#38bdf8;
-margin-bottom:10px;
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:70px;
+max-width:1300px;
+flex-wrap:wrap;
 }
 
-.hero h2{
-font-size:1.3rem;
-font-weight:500;
+.hero-image img{
+width:340px;
+height:340px;
+object-fit:cover;
+border-radius:25px;
+border:4px solid var(--primary);
+box-shadow:0 20px 60px rgba(0,0,0,.6);
+transition:.4s;
+}
+
+.hero-image img:hover{
+transform:scale(1.04);
+}
+
+.badge{
+display:inline-block;
+background:var(--primary);
+color:black;
+padding:10px 18px;
+border-radius:50px;
+font-size:.9rem;
+font-weight:700;
 margin-bottom:20px;
-color:#cbd5e1;
 }
 
-.hero p{
-max-width:900px;
-margin:auto;
+.hero-content{
+max-width:700px;
+}
+
+.hero-content h1{
+font-size:4rem;
+line-height:1.1;
+}
+
+.hero-content h2{
+color:var(--primary);
+margin-top:10px;
+}
+
+.hero-content h3{
+margin-top:10px;
+color:#cbd5e1;
+font-weight:500;
+}
+
+.hero-content p{
+margin-top:20px;
 color:#94a3b8;
 }
 
-.btn-group{
+.hero-buttons{
 margin-top:30px;
 }
 
 .btn{
 display:inline-block;
-padding:12px 24px;
-margin:8px;
-border-radius:8px;
+padding:13px 28px;
 text-decoration:none;
+border-radius:10px;
 font-weight:600;
+margin-right:10px;
 transition:.3s;
 }
 
-.primary{
-background:#38bdf8;
-color:#000;
+.btn-primary{
+background:var(--primary);
+color:black;
 }
 
-.primary:hover{
+.btn-secondary{
+border:2px solid var(--primary);
+color:var(--primary);
+}
+
+.btn:hover{
 transform:translateY(-3px);
 }
 
-.secondary{
-border:2px solid #38bdf8;
-color:#38bdf8;
-}
-
-.secondary:hover{
-background:#38bdf8;
-color:#000;
-}
-
-nav{
-position:sticky;
-top:0;
-background:#020617;
-padding:15px;
-z-index:1000;
-box-shadow:0 2px 10px rgba(0,0,0,.3);
-}
-
-nav ul{
-display:flex;
-justify-content:center;
-gap:30px;
-list-style:none;
-flex-wrap:wrap;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-nav a:hover{
-color:#38bdf8;
-}
-
 section{
-padding:80px 0;
+padding:90px 0;
 }
 
 .section-title{
 text-align:center;
+font-size:2.4rem;
+color:var(--primary);
 margin-bottom:50px;
-font-size:2.2rem;
-color:#38bdf8;
 }
 
-.about{
+.about-box{
+background:var(--card);
+padding:40px;
+border-radius:20px;
 text-align:center;
-max-width:950px;
-margin:auto;
 color:#cbd5e1;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
-background:#1e293b;
-padding:25px;
-border-radius:15px;
-transition:.3s;
+background:var(--card);
+padding:30px;
+border-radius:20px;
+transition:.4s;
+border:1px solid rgba(56,189,248,.1);
 }
 
 .card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
+box-shadow:0 15px 40px rgba(56,189,248,.15);
 }
 
 .card h3{
-color:#38bdf8;
-margin-bottom:15px;
+color:var(--primary);
+margin-bottom:10px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+}
+
+.skill{
+background:var(--primary);
+color:black;
+padding:12px 18px;
+border-radius:50px;
+font-weight:600;
 }
 
 .timeline{
@@ -165,15 +242,15 @@ margin:auto;
 }
 
 .timeline-item{
-background:#1e293b;
-padding:25px;
-margin-bottom:20px;
-border-left:5px solid #38bdf8;
-border-radius:10px;
+background:var(--card);
+padding:30px;
+border-left:5px solid var(--primary);
+margin-bottom:25px;
+border-radius:12px;
 }
 
 .timeline-item h3{
-color:#38bdf8;
+color:var(--primary);
 }
 
 .timeline-item span{
@@ -181,117 +258,212 @@ color:#94a3b8;
 font-size:.9rem;
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
+.timeline-item ul{
+padding-left:20px;
+margin-top:15px;
 }
 
-.skill{
-background:#38bdf8;
-color:#000;
-padding:10px 18px;
-border-radius:25px;
-font-weight:600;
-}
-
-.contact{
+.contact-box{
+background:var(--card);
+padding:50px;
+border-radius:20px;
 text-align:center;
 }
 
-.contact a{
-color:#38bdf8;
+.contact-box p{
+margin:15px 0;
+}
+
+.contact-box a{
+color:var(--primary);
 text-decoration:none;
 }
 
 footer{
+background:#010409;
+padding:40px 20px;
 text-align:center;
-padding:25px;
-background:#020617;
 color:#94a3b8;
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:2.5rem;
+.navbar{
+flex-direction:column;
+gap:15px;
 }
 
-.hero h2{
-font-size:1rem;
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
 }
 
+.hero-content{
+text-align:center;
+}
+
+.hero-content h1{
+font-size:2.4rem;
+}
+
+.hero-image img{
+width:260px;
+height:260px;
+}
+
+.btn{
+display:block;
+margin:10px auto;
+width:220px;
+text-align:center;
+}
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-<div class="hero">
+<nav class="navbar">
+<div class="logo">CSP</div>
 
-<h1>Chaitanya Sharad Patil</h1>
-
-<h2>
-Administrator Desktop Support – L3 |
-Senior Technical Support Specialist @ Wipro
-</h2>
-
-<p>
-IT Infrastructure • Cybersecurity & Compliance • ITIL & ITSM •
-Windows & macOS • iOS Specialist • Executive & VIP Support •
-Enterprise IT Operations
-</p>
-
-<div class="btn-group">
-<a href="#contact" class="btn primary">Contact Me</a>
-<a href="https://www.linkedin.com/in/chaitanyapatil5" target="_blank" class="btn secondary">LinkedIn</a>
-</div>
-
-</div>
-</header>
-
-<nav>
-<ul>
+<ul class="nav-links">
 <li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
+<li><a href="#highlights">Highlights</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#achievements">Achievements</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#certifications">Certifications</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
-<section id="about">
+<header class="hero">
 
+<div class="hero-container">
+
+<div class="hero-image">
+<img src="profile.jpg" alt="Chaitanya Sharad Patil">
+</div>
+
+<div class="hero-content">
+
+<div class="badge">
+AVAILABLE FOR SENIOR IT INFRASTRUCTURE & END USER COMPUTING ROLES
+</div>
+
+<h1>Chaitanya Sharad Patil</h1>
+
+<h2>Administrator Desktop Support – L3</h2>
+
+<h3>Senior Technical Support Specialist @ Wipro</h3>
+
+<p>
+Enterprise IT Infrastructure • Cybersecurity & Compliance •
+Windows • macOS • iOS • ITIL & ITSM •
+VIP & Executive Support
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+Contact Me
+</a>
+
+<a href="resume.pdf" target="_blank" class="btn btn-secondary">
+Download Resume
+</a>
+
+<a href="https://www.linkedin.com/in/chaitanyapatil5" target="_blank" class="btn btn-secondary">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
 <div class="container">
 
 <h2 class="section-title">Professional Summary</h2>
 
-<div class="about">
+<div class="about-box">
 
 <p>
+Experienced IT Infrastructure & End-User Support Professional with 5+ years of experience supporting enterprise environments, executive leadership teams, and business-critical operations.
 
-Experienced IT Infrastructure & End-User Support Professional with
-5+ years of experience in Desktop Support, IT Operations,
-System Administration and Enterprise Technical Support.
+Currently serving as Administrator Desktop Support L3 and Senior Technical Support Specialist at Wipro supporting Star India Private Limited.
 
-Currently working as Administrator Desktop Support L3 /
-Senior Technical Support Specialist at Wipro supporting
-Star India Private Limited.
-
-Specialized in Apple-iOS, Windows, Active Directory,
-Microsoft 365, Cybersecurity Compliance,Dedicated VIP Support Specialist,
-ITIL-based Service Delivery and Enterprise Infrastructure
-Management.
-
+Specialized in Windows, macOS, iOS, Microsoft 365, Active Directory, ITIL Service Management, Cybersecurity Compliance, Incident Management and VIP Support.
 </p>
 
 </div>
 
 </div>
+</section>
 
+<section id="highlights">
+<div class="container">
+
+<h2 class="section-title">Professional Highlights</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>5+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="card">
+<h3>1500+</h3>
+<p>Users Supported</p>
+</div>
+
+<div class="card">
+<h3>40+</h3>
+<p>Tickets Managed Daily</p>
+</div>
+
+<div class="card">
+<h3>VIP</h3>
+<p>Executive Support Specialist</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+
+<h2 class="section-title">Technical Expertise</h2>
+
+<div class="skills">
+
+<span class="skill">Windows</span>
+<span class="skill">macOS</span>
+<span class="skill">Linux</span>
+<span class="skill">iOS</span>
+<span class="skill">Microsoft 365</span>
+<span class="skill">Active Directory</span>
+<span class="skill">ServiceNow</span>
+<span class="skill">ITIL</span>
+<span class="skill">ITSM</span>
+<span class="skill">Cybersecurity</span>
+<span class="skill">VIP Support</span>
+<span class="skill">Incident Management</span>
+<span class="skill">Problem Management</span>
+<span class="skill">Change Management</span>
+<span class="skill">Asset Management</span>
+
+</div>
+
+</div>
 </section>
 
 <section id="experience">
@@ -305,38 +477,34 @@ Management.
 <div class="timeline-item">
 <h3>Wipro</h3>
 <span>July 2024 – Present</span>
-<p>
-Administrator Desktop Support L3 | Senior Technical Support Specialist
-supporting executives, enterprise users, cybersecurity compliance,
-Active Directory, Windows, macOS and iOS environments.
-</p>
+<p>Administrator Desktop Support L3 | Senior Technical Support Specialist</p>
+
+<ul>
+<li>Executive & VIP support for leadership teams.</li>
+<li>Windows, macOS & iOS administration.</li>
+<li>Cybersecurity and compliance operations.</li>
+<li>Incident and escalation management.</li>
+<li>Enterprise infrastructure support.</li>
+</ul>
+
 </div>
 
 <div class="timeline-item">
 <h3>Publicis Re:Sources</h3>
 <span>April 2023 – July 2024</span>
-<p>
-Associate IT Local Support responsible for P1/P2 incident management,
-PowerShell automation, VIP support and enterprise endpoint management.
-</p>
+<p>Associate IT Local Support</p>
 </div>
 
 <div class="timeline-item">
 <h3>CMS IT Services</h3>
 <span>April 2022 – March 2023</span>
-<p>
-Senior Desktop Support Engineer supporting BFSI clients,
-IMACD operations and enterprise infrastructure environments.
-</p>
+<p>Senior Desktop Support Engineer</p>
 </div>
 
 <div class="timeline-item">
 <h3>Fencer Services Pvt Ltd</h3>
 <span>June 2021 – February 2022</span>
-<p>
-System Engineer responsible for infrastructure deployment,
-network setup and AMC support.
-</p>
+<p>System Engineer</p>
 </div>
 
 </div>
@@ -345,64 +513,19 @@ network setup and AMC support.
 
 </section>
 
-<section id="skills">
+<section id="certifications">
 
 <div class="container">
 
-<h2 class="section-title">Technical Skills</h2>
-
-<div class="skills">
-
-<div class="skill">Windows</div>
-<div class="skill">macOS</div>
-<div class="skill">iOS</div>
-<div class="skill">Linux</div>
-<div class="skill">Active Directory</div>
-<div class="skill">Microsoft 365</div>
-<div class="skill">ServiceNow</div>
-<div class="skill">ITIL</div>
-<div class="skill">ITSM</div>
-<div class="skill">Cybersecurity</div>
-<div class="skill">Compliance</div>
-<div class="skill">VIP Support</div>
-<div class="skill">Incident Management</div>
-<div class="skill">Problem Management</div>
-<div class="skill">Change Management</div>
-<div class="skill">Asset Management</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="achievements">
-
-<div class="container">
-
-<h2 class="section-title">Key Achievements</h2>
+<h2 class="section-title">Certifications</h2>
 
 <div class="grid">
 
-<div class="card">
-<h3>5+ Years Experience</h3>
-<p>Enterprise IT Infrastructure & Technical Support.</p>
-</div>
-
-<div class="card">
-<h3>Executive Support</h3>
-<p>Provided dedicated support for CEO, CFO and CTO offices.</p>
-</div>
-
-<div class="card">
-<h3>High SLA Compliance</h3>
-<p>Consistently achieved service delivery targets.</p>
-</div>
-
-<div class="card">
-<h3>Cybersecurity Focus</h3>
-<p>Compliance-driven support and secure IT operations.</p>
-</div>
+<div class="card"><h3>Learning ServiceNow</h3></div>
+<div class="card"><h3>Technical Support Fundamentals</h3></div>
+<div class="card"><h3>IT Service Desk: Service Management</h3></div>
+<div class="card"><h3>Decision-Making Strategies</h3></div>
+<div class="card"><h3>Business Etiquette</h3></div>
 
 </div>
 
@@ -412,34 +535,26 @@ network setup and AMC support.
 
 <section id="contact">
 
-<div class="container contact">
+<div class="container">
 
-<h2 class="section-title">Contact</h2>
+<div class="contact-box">
 
-<p>Email</p>
+<h2 class="section-title">Let's Connect</h2>
+
+<p>📧 <a href="mailto:chaitanyapatil5@gmail.com">chaitanyapatil5@gmail.com</a></p>
+
+<p>📱 <a href="tel:+919867332256">+91 9867332256</a></p>
+
+<p>📍 Mumbai, Maharashtra, India</p>
+
 <p>
-<a href="mailto:chaitanyapatil5@gmail.com">
-chaitanyapatil5@gmail.com
-</a>
-</p>
-
-<br>
-
-<p>Mobile</p>
-<p>
-<a href="tel:+919867332256">
-+91 98673 32256
-</a>
-</p>
-
-<br>
-
-<p>LinkedIn</p>
-<p>
+💼
 <a href="https://www.linkedin.com/in/chaitanyapatil5" target="_blank">
-linkedin.com/in/chaitanyapatil5
+LinkedIn Profile
 </a>
 </p>
+
+</div>
 
 </div>
 
@@ -447,9 +562,19 @@ linkedin.com/in/chaitanyapatil5
 
 <footer>
 
+<h3>Chaitanya Sharad Patil</h3>
+
 <p>
-© 2026 Chaitanya Sharad Patil | Administrator Desktop Support L3 |
-Senior Technical Support Specialist
+Administrator Desktop Support – L3 |
+Senior Technical Support Specialist @ Wipro
+</p>
+
+<p>
+Enterprise IT Infrastructure • Cybersecurity • VIP Support
+</p>
+
+<p>
+© 2026 All Rights Reserved
 </p>
 
 </footer>
