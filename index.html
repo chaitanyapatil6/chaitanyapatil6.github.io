@@ -3,204 +3,291 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chaitanya Sharad Patil | Premium Portfolio</title>
-<meta name="description" content="Administrator Desktop Support L3 | Senior Technical Support Specialist | IT Infrastructure | EUC | VIP Support">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>Chaitanya Sharad Patil | EUC & IT Infrastructure Engineer</title>
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-:root{
---primary:#38bdf8;
---bg:#0b1120;
---card:#111827;
---text:#f8fafc;
---muted:#94a3b8;
-}
-body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-.container{width:90%;max-width:1200px;margin:auto}
-.navbar{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:#020617ee;backdrop-filter:blur(10px);z-index:1000}
-.logo{font-weight:700;color:var(--primary);font-size:1.5rem}
-.navbar ul{display:flex;gap:20px;list-style:none}
-.navbar a{color:white;text-decoration:none}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 20px;background:linear-gradient(135deg,#020617,#0f172a,#111827)}
-.hero-wrap{display:flex;gap:60px;align-items:center;flex-wrap:wrap}
-.hero img{width:320px;height:320px;border-radius:20px;object-fit:cover;border:4px solid var(--primary)}
-.badge{display:inline-block;background:var(--primary);color:#000;padding:10px 18px;border-radius:30px;font-weight:700;margin-bottom:20px}
-h1{font-size:3.5rem}
-.hero h2{color:var(--primary)}
-.btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;margin:10px 10px 0 0}
-.btn1{background:var(--primary);color:#000}
-.btn2{border:2px solid var(--primary);color:var(--primary)}
-section{padding:90px 0;scroll-margin-top:100px}
-.title{text-align:center;color:var(--primary);margin-bottom:40px;font-size:2rem}
-.card{background:var(--card);padding:25px;border-radius:16px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.skills{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.skill{background:var(--primary);color:#000;padding:10px 15px;border-radius:30px;font-weight:600}
-.timeline-item{background:var(--card);padding:25px;border-left:5px solid var(--primary);border-radius:12px;margin-bottom:20px}
-.timeline-item h3{color:var(--primary)}
-.timeline-item li{margin-bottom:8px}
-.contact{text-align:center}
-footer{text-align:center;padding:40px;background:#020617;color:var(--muted)}
-@media(max-width:768px){
-.navbar{flex-direction:column;gap:10px}
-.navbar ul{flex-wrap:wrap;justify-content:center}
-h1{font-size:2.3rem}
-.hero img{width:240px;height:240px}
-}
-</style>
+<meta name="description" content="Lead EUC & IT Infrastructure portfolio">
+
+<link rel="icon" href="favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav class="navbar">
+<!-- Loader -->
+<div id="loader">
+    <div class="loader-content">
+        <div class="spinner"></div>
+        <h2>Loading Portfolio...</h2>
+    </div>
+</div>
+
+<div id="progress-bar"></div>
+
+<!-- ================= HERO ================= -->
+
+<header id="home" class="hero">
+
+<nav class="navbar container">
+
 <div class="logo">CSP</div>
-<ul>
+
+<ul class="nav-links">
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certifications">Certifications</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
+<button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+
 </nav>
 
-<header class="hero">
-<div class="hero-wrap">
-<div>
+<div class="hero-content container">
+
+<div class="hero-text">
+
+<span class="badge">
+AVAILABLE FOR LEAD EUC & IT INFRASTRUCTURE ROLES
+</span>
+
+<h1>Chaitanya Sharad Patil</h1>
+
+<h2><span id="typing"></span></h2>
+
+<p>
+Enterprise IT professional with experience in VIP Support,
+Microsoft 365, Windows, macOS, Active Directory,
+ServiceNow, Endpoint Management and ITSM.
+</p>
+
+<div class="hero-buttons">
+
+<a href="resume.pdf" class="btn primary" download>
+Download Resume
+</a>
+
+<a href="#contact" class="btn secondary">
+Contact Me
+</a>
+
+<a href="https://github.com/chaitanyapatil6"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/chaitanyapatil5"
+target="_blank"
+rel="noopener noreferrer"
+class="btn secondary">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
 <img src="profile.jpg" alt="Chaitanya Sharad Patil">
 </div>
-<div>
-<div class="badge">OPEN TO EUC LEAD & IT INFRASTRUCTURE LEAD ROLES</div>
-<h1>Chaitanya Sharad Patil</h1>
-<h2>Administrator Desktop Support L3</h2>
-<p>Senior Technical Support Specialist @ Wipro</p>
-<p>Enterprise IT Infrastructure • Cybersecurity • ITIL • ITSM • VIP Support</p>
-<a class="btn btn1" href="#contact">Contact Me</a>
-<a class="btn btn2" href="resume.pdf">Download Resume</a>
-<a class="btn btn2" href="https://www.linkedin.com/in/chaitanyapatil5" target="_blank">LinkedIn</a>
-<a class="btn btn2" href="https://github.com/chaitanyapatil6" target="_blank">GitHub</a>
+
 </div>
-</div>
+
 </header>
 
-<section id="about">
+<main>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
 <div class="container">
-<h2 class="title">Professional Summary</h2>
-<div class="card">
-<p>Administrator Desktop Support L3 and Senior Technical Support Specialist with 5+ years of experience supporting enterprise IT environments, executive leadership teams, and business-critical operations. Currently supporting Star India Private Limited through Wipro, specializing in End User Computing (EUC), IT Infrastructure, VIP Support, Microsoft 365, Active Directory, ServiceNow, Cybersecurity Compliance, and IT Service Management.</p>
+
+<h2 class="section-title">
+About Me
+</h2>
+
+<div class="about-grid">
+
+<div class="about-card">
+
+<img src="profile.jpg" alt="Chaitanya Sharad Patil">
+
+<h3>Chaitanya Sharad Patil</h3>
+
+<p>Administrator Desktop Support L3</p>
+
+<span>Senior Technical Support Specialist @ Wipro</span>
+
 </div>
+
+<div class="about-content">
+
+<div class="current-role">
+
+<h3>Currently</h3>
+
+<p>
+Working as an Administrator Desktop Support L3 /
+Senior Technical Support Specialist at Wipro,
+supporting the enterprise IT environment of
+Star India Private Limited.
+</p>
+
 </div>
+
+<h3>Professional Summary</h3>
+
+<p>
+IT Infrastructure and End User Computing (EUC)
+professional with over six years of experience
+supporting enterprise environments across Media,
+BFSI and Global organizations.
+
+Experienced in Microsoft 365, Active Directory,
+Windows, macOS, Linux, ServiceNow,
+VIP Executive Support, Endpoint Management,
+ITSM processes and enterprise troubleshooting.
+
+Passionate about improving user productivity,
+solving complex infrastructure challenges,
+and delivering reliable IT services.
+</p>
+
+<div class="skills-chips">
+
+<span>EUC</span>
+<span>Microsoft 365</span>
+<span>Windows</span>
+<span>macOS</span>
+<span>Linux</span>
+<span>Active Directory</span>
+<span>ServiceNow</span>
+<span>ITIL</span>
+<span>ITSM</span>
+<span>VIP Support</span>
+<span>Endpoint Management</span>
+<span>Asset Management</span>
+<span>Incident Management</span>
+<span>Change Management</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section>
-<div class="container">
-<h2 class="title">Key Highlights</h2>
-<div class="grid">
-<div class="card"><h3>5+ Years</h3><p>Enterprise IT Experience</p></div>
-<div class="card"><h3>3100+</h3><p>Users Supported</p></div>
-<div class="card"><h3>40+</h3><p>Tickets Resolved in a Day</p></div>
-<div class="card"><h3>VIP</h3><p>Executive Support Specialist</p></div>
-</div>
-</div>
-</section>
+<!-- ================= EXPERIENCE ================= -->
 
-<section id="skills">
-<div class="container">
-<h2 class="title">Technical Skills</h2>
-<div class="skills">
-<span class="skill">Windows</span>
-<span class="skill">macOS</span>
-<span class="skill">Linux</span>
-<span class="skill">Microsoft 365</span>
-<span class="skill">Active Directory</span>
-<span class="skill">ServiceNow</span>
-<span class="skill">ITIL</span>
-<span class="skill">ITSM</span>
-<span class="skill">Cybersecurity</span>
-<span class="skill">VIP Support Specialist</span>
-<span class="skill">Asset Management</span>
-<span class="skill">Incident Management</span>
-<span class="skill">Change Management</span>
-<span class="skill">Problem Management</span>
-</div>
-</div>
-</section>
+<section id="experience" class="section">
 
-<section id="experience">
 <div class="container">
-<h2 class="title">Professional Experience</h2>
+
+<h2 class="section-title">
+Professional Experience
+</h2>
 
 <div class="timeline-item">
+
 <h3>Wipro | Senior Technical Support Specialist</h3>
+
 <p>July 2024 – Present</p>
+
 <ul>
-<li>Provide enterprise Administartor Desktop Support L3 and executive VIP support.</li>
+<li>Provide enterprise <strong>Administrator Desktop Support L3</strong> and Executive VIP Support.</li>
 <li>Manage incident, escalation and infrastructure operations.</li>
-<li>Support Windows, macOS and Microsoft 365, Google Workspace environments.</li>
+<li>Support Windows, macOS, Microsoft 365 and Google Workspace environments.</li>
 <li>Ensure cybersecurity compliance and service excellence.</li>
 </ul>
+
 </div>
 
 <div class="timeline-item">
+
 <h3>Publicis Re:Sources | Associate IT Support</h3>
+
 <p>April 2023 – July 2024</p>
+
 <ul>
 <li>Delivered advanced desktop support and endpoint administration.</li>
 <li>Resolved critical P1/P2 incidents and escalations.</li>
 <li>Led migration, refresh and asset lifecycle initiatives.</li>
 <li>Supported executive stakeholders and global teams.</li>
 </ul>
+
 </div>
 
 <div class="timeline-item">
+
 <h3>CMS IT Services | Senior Desktop Support Engineer</h3>
+
 <p>April 2022 – March 2023</p>
+
 <ul>
 <li>Supported BFSI clients including HDB Financial Services.</li>
-<li>Managed IMACD operations and support for 1500+ users.</li>
+<li>Managed IMACD operations for 1,500+ users.</li>
 <li>Led field engineers and improved operational efficiency.</li>
 </ul>
+
 </div>
 
 <div class="timeline-item">
+
 <h3>Fencer Systems Pvt Ltd | System Engineer</h3>
+
 <p>June 2021 – February 2022</p>
+
 <ul>
 <li>Delivered infrastructure deployment and AMC support.</li>
-<li>Managed network setup, backup and recovery processes.</li>
+<li>Managed network setup, backup and recovery.</li>
 <li>Led office IT setup and relocation projects.</li>
 </ul>
+
 </div>
 
 <div class="timeline-item">
+
 <h3>Officebing | Desktop Support / Network Engineer</h3>
+
 <p>September 2020 – May 2021</p>
+
 <ul>
 <li>Supported 300+ Linux systems and 40+ Windows endpoints.</li>
 <li>Performed hardware refresh and lifecycle management.</li>
 <li>Maintained server and network connectivity.</li>
 </ul>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="contact">
-<div class="container">
-<h2 class="title">Let's Connect</h2>
-<div class="card contact">
-<p>📧 chaitanyapatil5@gmail.com</p>
-<p>📱 +91 9867332256</p>
-<p>📍 Mumbai, Maharashtra, India</p>
-<p>LinkedIn: linkedin.com/in/chaitanyapatil5</p>
-</div>
-</div>
-</section>
+</main>
 
 <footer>
-<h3>Chaitanya Sharad Patil</h3>
-<p>Administrator Desktop Support L3 | Senior Technical Support Specialist</p>
-<p>© 2026 All Rights Reserved</p>
+
+<div class="container">
+<p>© 2026 Chaitanya Sharad Patil. All rights reserved.</p>
+</div>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
