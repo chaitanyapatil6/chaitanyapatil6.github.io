@@ -118,11 +118,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const typingElement = document.getElementById("typing");
     if (typingElement) {
         const titles = [
+            "Administrator Desktop Support L3",
             "Senior Technical Support Specialist",
-            "Lead EUC Infrastructure Engineer",
-            "VIP Executive Support Specialist",
-            "Microsoft 365 & Active Directory Admin",
-            "ITSM & ITIL Operations Lead"
+            "VIP Executive Support (CEO / C-Suite)",
+            "PowerShell & Batch Automation Specialist",
+            "ITIL® 4 & IT Infrastructure Engineer"
         ];
         let titleIndex = 0;
         let charIndex = 0;
